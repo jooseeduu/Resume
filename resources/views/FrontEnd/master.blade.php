@@ -10,7 +10,7 @@
 	
 
 	<!-- STYLESHEETS -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/flaticon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/flaticon.png') }}">
 	<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}" type="text/css" media="all">
 	<link rel="stylesheet" href="{{ asset('/css/all.min.css') }}" type="text/css" media="all">
 	<link rel="stylesheet" href="{{ asset('/css/simple-line-icons.css') }}" type="text/css" media="all">
@@ -786,20 +786,20 @@
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!-- SCRIPTS -->
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/infinite-scroll.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/custom.js"></script>
+<script src="{{ asset('/js/jquery-1.12.3.min.js') }}"></script>
+<script src="{{ asset('/js/jquery.easing.min.js') }}"></script>
+<script src="{{ asset('/js/popper.min.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/js/jquery.waypoints.min.js') }}"></script>
+<script src="{{ asset('/js/jquery.counterup.min.js') }}"></script>
+<script src="{{ asset('/js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script src="{{ asset('/js/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('/js/infinite-scroll.min.js') }}"></script>
+<script src="{{ asset('/js/imagesloaded.pkgd.min.js') }}"></script>
+<script src="{{ asset('/js/slick.min.js') }}"></script>
+<script src="{{ asset('/js/contact.js') }}"></script>
+<script src="{{ asset('/js/validator.js') }}"></script>
+<script src="{{ asset('/js/custom.js') }}"></script>
 
 </body>
 </html>

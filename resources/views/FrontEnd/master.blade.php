@@ -117,7 +117,7 @@
 		</section>
 
 		<!-- section about -->
-		@include('FrontEnd.About')
+		@include('FrontEnd.about')
 
 		<!-- section skills -->
 		<section id="skills" class="shadow-blue white-bg padding">

@@ -9,6 +9,6 @@ class TemplateController extends Controller
     //
     public function index(){
 
-    	return view('Frontend.home');
+    	return view('FrontEnd.home');
     }
 }

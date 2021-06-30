@@ -3,17 +3,19 @@
 <html lang="en-US">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="google" content="notranslate">
 	<title>Jose Marroquín - Portafolio</title>
 	<meta name="description" content="Bako - Personal Portfolio & Resume HTML Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
+	
 
 	<!-- STYLESHEETS -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/flaticon.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/simplebar.css" type="text/css" media="all">
+	
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
@@ -46,8 +48,8 @@
 			<span></span>
 			<span></span>
 		</button>
-		<a href="index.html" class="logo"><img src="images/imagen_persona.png" alt="Jose Marroquin" /></a>
-		<a href="index.html" class="site-title dot ml-2">Bako Doe</a>
+		<a href="index.html" class="logo"><img class="rounded" src="images/imagen_persona.png" alt="Jose Marroquin" /></a>
+		<a href="index.html" class="site-title dot ml-1">Jose Marroquín</a>
 	</div>
 
 	<!-- header -->
@@ -66,10 +68,7 @@
 			<div style='margin-top: 15px;'>
 			
 
-				<ul class="vertical-menu scrollspy">
-
-
-				
+				<ul class="vertical-menu scrollspy">			
 					<li><a href="#about"><i class="icon-user"></i>About</a></li>
 					<li><a href="#services"><i class="icon-bulb"></i>Services</a></li>
 					<li><a href="#resume"><i class="icon-graduation"></i>Resume</a></li>
@@ -77,7 +76,7 @@
 					<li><a href="#blog"><i class="icon-pencil"></i>Blog</a></li>
 					<li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
 					<li><a href="./descarga-cv/cv-principal.pdf" download="CV-Jose Marroquin.pdf"><i class="icon-cloud-download"></i>Descargar CV</a></li>
-					<li><a href=""><i class="fas fa-globe"></i>Versión Español</a></li>
+					<li><a href=""><i class="fas fa-globe"></i>Español</a></li>
 
 				</ul>
 			</div>
@@ -91,7 +90,7 @@
 					<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
 					<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
 					<li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-					<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Tooltip on top" ><a href="https://github.com/jooseeduu" target="_blank"><i class="fab fa-github"></i></a></li>
+					<li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Go To Github" ><a href="https://github.com/jooseeduu" target="_blank"><i class="fab fa-github"></i></a></li>
 
 
 				</ul>
@@ -118,32 +117,7 @@
 		</section>
 
 		<!-- section about -->
-		<section id="about" class="shadow-blue white-bg padding">
-			<h3 class="section-title">About Me</h3>
-			<div class="spacer" data-height="80"></div>
-
-			<div class="row">
-				<div class="col-md-3">
-					<img src="https://via.placeholder.com/150x150" alt="about" />
-				</div>
-				<div class="col-md-9">
-					<h2 class="mt-4 mt-md-0 mb-4">Hello,</h2>
-					<p class="mb-0">I am Bako Doe, web developer from London, United Kingdom. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
-					<div class="row my-4">
-						<div class="col-md-6">
-							<p class="mb-2">Name: <span class="text-dark">Bako Doe</span></p>
-							<p class="mb-0">Birthday: <span class="text-dark">14 August, 1990</span></p>
-						</div>
-						<div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
-							<p class="mb-2">Location: <span class="text-dark">London, UK</span></p>
-							<p class="mb-0">Email: <span class="text-dark">hello@bako.com</span></p>
-						</div>
-					</div>
-					<a href="#" class="btn btn-default mr-3"><i class="icon-cloud-download"></i>Download CV</a>
-					<a href="#" class="btn btn-alt mt-2 mt-md-0 mt-xs-2"><i class="icon-envelope"></i>Hire me</a>
-				</div>
-			</div>
-		</section>
+		@include('FrontEnd.About')
 
 		<!-- section skills -->
 		<section id="skills" class="shadow-blue white-bg padding">
@@ -779,6 +753,31 @@
 
 		</section>
 		
+
+
+		        <!-- single portfolio -->
+		<section class="single-portfolio shadow-blue white-bg padding" >
+            <h2 class="archive-header">Coronavirus POWER-BI</h2>
+            <!-- portfolio info -->
+            <ul class="list-inline portfolio-info mb-0 mt-4">
+                <li class="list-inline-item"><i class="icon-user"></i>Jose Marroquín</li>
+                <li class="list-inline-item"><i class="icon-calendar"></i>2021 - at Present</li>
+                <li class="list-inline-item"><i class="icon-link"></i><a href="http://envato.com" target="_blank">envato.com</a></li>
+            </ul>
+            <div class="spacer" data-height="40"></div>
+            
+            <!-- portfolio image -->
+            <img src="https://via.placeholder.com/800x600" alt="Portfolio-title">
+
+            <!-- portfolio content -->
+            <div class="portfolio-content mt-5">
+                <h3>Overview</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p><p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p><p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+            </div>
+        </section>
+
+
+
 	</main>
 
 </div>
@@ -814,12 +813,6 @@
 }
 
 
-
-.btn-sm {
-    padding: 5px 20px;
-    font-size: 12px;
-    line-height: 0;
-}
 </style>
 
 
@@ -827,5 +820,5 @@
 	$(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-	
+
 </script>

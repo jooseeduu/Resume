@@ -11,13 +11,13 @@
 
 	<!-- STYLESHEETS -->
 	<link rel="shortcut icon" type="image/x-icon" href="images/flaticon.png">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ asset('/css/all.min.css') }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ asset('/css/simple-line-icons.css') }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ asset('/css/slick.css') }}" type="text/css" media="all">
 	
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ asset('/css/jquery.mCustomScrollbar.min.css') }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ asset('/css/style.css') }}" type="text/css" media="all">
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

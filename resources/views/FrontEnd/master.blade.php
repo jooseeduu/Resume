@@ -785,7 +785,7 @@
 <!-- Go to top button -->
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<!-- SCRIPTS -->
+<!-- SCRIPTS v2-->
 <script src="{{ asset('/js/jquery-1.12.3.min.js') }}"></script>
 <script src="{{ asset('/js/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('/js/popper.min.js') }}"></script>

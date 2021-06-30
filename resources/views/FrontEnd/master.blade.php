@@ -60,7 +60,7 @@
 		<div class="header-inner d-flex align-items-start flex-column">
 			<a href="index.html"><img class="rounded" style='margin-left: 50px;' src="images/imagen_persona.png" alt="Jose Marroquin" /></a>
 			<a href="index.html" class="site-title dot mt-4">Jose Marroquín</a>
-			<span class="site-slogan">Ingeniero de Datos</span>
+			<span class="site-slogan">Ingeniero de Datosv111</span>
 
  
 			

@@ -23,9 +23,4 @@ Route::get('/', function () {
 Route::get('/', 'App\Http\Controllers\TemplateController@index');
 
 
-Route::get('/{loc}', function ($locale) {
-    App::setLocale($locale);
-   	return view('FrontEnd.home');
-
-    //
-});
+Route::get('/{locale}', 'App\Http\Controllers\TemplateController@indexLocation' );

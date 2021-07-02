@@ -10,14 +10,14 @@
 	
 
 	<!-- STYLESHEETS -->
-	<link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/flaticon.png') }}">
-	<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}" type="text/css" media="all">
-	<link rel="stylesheet" href="{{ asset('/css/all.min.css') }}" type="text/css" media="all">
-	<link rel="stylesheet" href="{{ asset('/css/simple-line-icons.css') }}" type="text/css" media="all">
-	<link rel="stylesheet" href="{{ asset('/css/slick.css') }}" type="text/css" media="all">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ '/images/flaticon.png' }}">
+	<link rel="stylesheet" href="{{ '/css/bootstrap.min.css' }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ '/css/all.min.css' }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ '/css/simple-line-icons.css' }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ '/css/slick.css' }}" type="text/css" media="all">
 	
-	<link rel="stylesheet" href="{{ asset('/css/jquery.mCustomScrollbar.min.css') }}" type="text/css" media="all">
-	<link rel="stylesheet" href="{{ asset('/css/style.css') }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ '/css/jquery.mCustomScrollbar.min.css' }}" type="text/css" media="all">
+	<link rel="stylesheet" href="{{ '/css/style.css' }}" type="text/css" media="all">
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -70,13 +70,29 @@
 
 				<ul class="vertical-menu scrollspy">			
 					<li><a href="#about"><i class="icon-user"></i>About</a></li>
-					<li><a href="#services"><i class="icon-bulb"></i>Services</a></li>
+					<li><a href="#services"><i class="icon-bulb"></i>{{ __('Services') }}</a></li>
 					<li><a href="#resume"><i class="icon-graduation"></i>Resume</a></li>
-					<li><a href="#works"><i class="icon-grid"></i>Works</a></li>
+					<li><a href="#works"><i class="icon-grid"></i>{{ __('Works') }}</a></li>
 					<li><a href="#blog"><i class="icon-pencil"></i>Blog</a></li>
-					<li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+					<li><a href="#contact"><i class="icon-phone"></i>{{'Jose'}}</a></li>
 					<li><a href="./descarga-cv/cv-principal.pdf" download="CV-Jose Marroquin.pdf"><i class="icon-cloud-download"></i>Descargar CV</a></li>
-					<li><a href=""><i class="fas fa-globe"></i>Español</a></li>
+					<li><a href="
+
+					@php
+
+
+						$locale = App::currentLocale(); 
+
+						if($locale == 'es')
+							echo 'en';
+						else
+							echo 'es';
+
+					@endphp
+
+						
+
+						"><i class="fas fa-globe"></i>{{ __('translate to') }}</a></li>
 
 				</ul>
 			</div>
@@ -107,7 +123,7 @@
 		<!-- section hero -->
 		<section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="https://via.placeholder.com/900x600">
 			<div class="cta mx-auto mt-2">
-				<h1 class="mt-0 mb-4">Hola, bienvenido<span class="dot"></span></h1>
+				<h1 class="mt-0 mb-4">{{ __('I love programming.') }}<span class="dot"></span></h1>
 				<p class="mb-4">.He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
 				<a href="#" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>View Portfolio</a>
 				<div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
